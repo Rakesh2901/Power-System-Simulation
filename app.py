@@ -1,4 +1,8 @@
 from flask import Flask,render_template, request
+import torch
+import io
+from PIL import Image
+from torchvision import transforms
 app = Flask(__name__)
 
 @app.route("/",methods=["GET", "POST"])
