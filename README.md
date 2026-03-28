@@ -20,24 +20,16 @@ Integrating physics-based constraints with Graph Neural Networks to provide high
 ```text
 power-system-Simulation/
 │
-├── venv/                  # Virtual environment
-│
-├── app.py                 # Main Flask/FastAPI application entry point
-├── requirements.txt       # Project dependencies
-├── Procfile               # Deployment configuration (e.g., for Heroku)
-│
-├── model/                 # Model storage
-│   └── model.pth          # Trained PyTorch model weights
-│
-├── utils/                 # Helper functions
-│   └── simulate.py        # Power system simulation logic
-│
-├── templates/             # HTML files
-│   └── index.html         # Main dashboard/UI
-│
-├── static/                # Static assets
-│   ├── plot.png           # Generated simulation plots
-│   ├── css/               # Stylesheets
-│   └── js/                # Frontend scripts
-│
-└── .gitignore             # Files to exclude from Git
+├── ├── Backend/
+│   ├── Models/
+│   │   ├── Model.py
+│   │   ├── LSTM.pth
+│   │   └── PIGNN.pth
+│   └── app.py
+├── Frontend/
+│   ├── static/
+│   ├── templates/
+│   └── App.jsx
+├── .flaskenv
+├── requirements.txt
+└── README.md

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Simulation</title>
+</head>
+<body>
+    <!-- This is where your React component will appear -->
+    <div id="root"></div>
+
+    <p>Want to see the React version?</p>
+    <a href="{{ url_for('serve_react') }}">
+        <button type="button">Go to JSX Page</button>
+    </a>
+
+    <!-- React and ReactDOM CDNs -->
+    <script src="https://unpkg.com"></script>
+    <script src="https://unpkg.com"></script>
+
+    <!-- Babel to convert JSX to JS in the browser -->
+    <script src="https://unpkg.com"></script>
+
+    <!-- Your JSX Component -->
+    <!-- Note: Make sure the file exists in /static/js/pi-gnn-grid.jsx -->
+    <script type="text/babel" src="{{ url_for('static', filename='js/pi-gnn-grid.jsx') }}"></script>
+
+<!-- From scratch implementation -->
+    <div id="root"></div>
+  <script type="module" src="/main.jsx"></script>
+</body>
+</html>

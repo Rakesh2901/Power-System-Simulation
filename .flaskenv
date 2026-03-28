@@ -1,0 +1,2 @@
+FLASK_APP=Backend/app.py
+FLASK_DEBUG=1
